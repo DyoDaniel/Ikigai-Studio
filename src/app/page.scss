@@ -43,6 +43,10 @@
   position: relative;
   height: calc(100vh - 150px);
 
+  .video-overlay {
+    max-height: 100%;
+  }
+
   .background-video {
     mask-image: radial-gradient(
       farthest-corner,

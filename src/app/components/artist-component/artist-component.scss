@@ -1,0 +1,253 @@
+$tablet: 768px;
+$desktop: 1024px;
+$desktopLarge: 1440px;
+
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+  @if $point == desktopLarge {
+    @media (min-width: $desktopLarge) {
+      @content;
+    }
+  }
+}
+
+.artists-title {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 48px;
+    font-family: "Oswald";
+    color: #e0473a;
+  }
+}
+
+.artists-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.frame {
+  width: 500px;
+  height: 750px;
+  border-radius: 10px;
+  border-color: var(--cor-texto);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .social-text {
+    display: flex;
+    padding: 10px;
+
+    .logo {
+      align-content: center;
+    }
+
+    h2,
+    span {
+      color: var(--cor-texto);
+    }
+  }
+}
+
+.artist-background {
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+.artist-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .info-flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.artist-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social {
+  align-self: center;
+  padding-top: 24px;
+}
+
+.artist-footer {
+  align-self: center;
+
+  span {
+    font-family: "Oswald";
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--cor-texto);
+  }
+}
+
+.artist-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 64px;
+    color: var(--cor-texto);
+    font-weight: bold;
+    font-family: "Oswald";
+  }
+  span {
+    -webkit-text-stroke: 1px var(--cor-texto);
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.artist-profile {
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+
+  video {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.contact-us {
+  background: var(--cor-texto);
+  border: 1px solid var(--cor-texto);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 15px 30px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+  i {
+    padding-right: 10px;
+  }
+}
+
+.contact-us:hover,
+.contact-us:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: var(--cor-texto);
+}
+
+.contact-us:active {
+  opacity: 0.5;
+}
+
+.slider {
+  display: flex;
+  max-width: 700px;
+  overflow: hidden;
+  border: 8px double var(--cor-texto-opacidade);
+
+  &:hover .gallery {
+    animation-play-state: paused;
+  }
+}
+
+.slider::before,
+.slider::after {
+  width: 50px !important;
+  position: relative;
+  content: "";
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-track {
+  display: flex;
+  max-width: calc(100% - 100px);
+}
+
+@media screen and (max-width: 600px) {
+  .frame {
+    width: 300px;
+    height: 550px;
+  }
+
+  .artist-profile {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+
+  .artist-1 {
+    height: 100px !important;
+    bottom: -30px !important;
+    left: -50px !important;
+  }
+
+  .artist-2 {
+    height: 200px !important;
+    bottom: 220px !important;
+    left: -45px !important;
+  }
+
+  .artist-3 {
+    height: 200px !important;
+    bottom: 20px !important;
+    right: -60px !important;
+  }
+
+  .artist-4 {
+    height: 150px !important;
+    bottom: 0px !important;
+    left: -45px !important;
+  }
+
+  .artist-5 {
+    height: 150px !important;
+    right: -60px !important;
+  }
+}

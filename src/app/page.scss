@@ -1,0 +1,252 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-options {
+  gap: 12px;
+  display: flex;
+  font-size: 30px;
+  transition: color 0.3s ease;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #e0473a;
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: calc(100vh - 150px);
+
+  .background-video {
+    mask-image: radial-gradient(
+      farthest-corner,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    opacity: 0, 5;
+  }
+
+  .ikigai-logo {
+    position: absolute;
+    place-self: center;
+    z-index: 1;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .ikigai-name {
+    position: absolute;
+    place-self: center;
+    font-size: 128px;
+    color: #e0473a;
+    filter: drop-shadow(0 1px 3px);
+    z-index: 1;
+    animation-name: fontChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fontChange {
+    25% {
+      font-family: "Open Sans", sans-serif;
+    }
+    50% {
+      font-family: "Noto Serif JP", serif;
+    }
+    70% {
+      font-family: "M PLUS 1p", serif;
+    }
+  }
+}
+
+.artists-section {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+
+  .artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1620px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .artist-frame {
+      display: flex;
+      position: relative;
+
+      .artist-1 {
+        height: 300px;
+        position: absolute;
+        bottom: -50px;
+        left: -140px;
+        z-index: 1;
+
+        animation: bounce 3s infinite ease-in-out;
+      }
+      .artist-2 {
+        height: 350px;
+        position: absolute;
+        bottom: 135px;
+        left: -80px;
+        z-index: 1;
+        animation: bounce 3s infinite ease-in-out;
+      }
+      .artist-3 {
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        right: -90px;
+        z-index: 1;
+        animation: bounce 3s infinite ease-in-out;
+      }
+      .artist-4 {
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        right: -140px;
+        z-index: 1;
+        animation: bounce 3s infinite ease-in-out;
+      }
+      .artist-5 {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        z-index: 1;
+        animation: bounce 3s infinite ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.footer-info {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0px 50px;
+
+  h1 {
+    font-size: 48px;
+    font-family: "Oswald";
+    color: #e0473a;
+  }
+}
+
+footer {
+  background-color: #161616;
+
+  .teste {
+    height: 800px;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.maps {
+  text-align: center;
+  padding: 100px 0px 50px;
+
+  h2 {
+    color: #e0473a;
+  }
+}
+
+.contact-us-ikigai {
+  background: #e0473a;
+  border: 1px solid #e0473a;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 15px 30px;
+  text-align: center;
+
+  i {
+    padding-right: 10px;
+  }
+}
+
+.contact-us-ikigai:hover,
+.contact-us-ikigai:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #e0473a;
+}
+
+.contact-us-ikigai:active {
+  opacity: 0.5;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  svg {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ikigai-name {
+    font-size: 80px !important;
+  }
+
+  .header-container {
+    svg {
+      width: 100%;
+    }
+  }
+
+  .menu-options {
+    font-size: 16px !important;
+  }
+}

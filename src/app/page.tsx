@@ -100,7 +100,7 @@ export default function Home() {
                 artistFooter="BLACKWORK  -  ANIME"
                 instagramUser="@sofidamaceno"
                 instragramUrl="https://www.instagram.com/sofidamaceno?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                backgroundImage="suminagashi-1.png"
+                backgroundImage="sofiBackground.png"
               ></ArtistComponent>
             </div>
 
@@ -115,21 +115,21 @@ export default function Home() {
                 artistFooter="BLACKWORK  -  ANIME"
                 instagramUser="@gabriel.klopper"
                 instragramUrl="https://www.instagram.com/gabriel_klopper?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                backgroundImage="blue-wave.jpg"
+                backgroundImage="klopperBackground.png"
               ></ArtistComponent>
             </div>
 
             <div className="artist-frame">
               <ArtistComponent
                 color="#000000"
-                logo="sofiLogo.png"
+                logo="joaoLogo.png"
                 artistName="João"
                 artistSurname="マテウス"
                 profileVideo="joaoProfileVideo.mp4"
                 artistFooter="BLACKWORK  -  ANIME"
                 instagramUser="@joaoink_"
                 instragramUrl="https://www.instagram.com/joaoink_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                backgroundImage="suminagashi-2.jpg"
+                backgroundImage="joaoBackground.png"
               ></ArtistComponent>
               <img src="joaoPet.png" className="artist-3" />
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="artist-frame">
               <ArtistComponent
                 color="#986DB2"
-                logo="sofiLogo.png"
+                logo="gysaLogo.png"
                 artistName="Gysa"
                 artistSurname="聖人"
                 profileVideo="gysaProfileVideo.mp4"
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="artist-frame">
               <ArtistComponent
                 color="#F596AA"
-                logo="sofiLogo.png"
+                logo="brunaLogo.png"
                 artistName="Bruna"
                 artistSurname="ビオンド"
                 profileVideo="brunaProfileVideo.mp4"

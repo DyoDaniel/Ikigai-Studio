@@ -1,4 +1,6 @@
-export function ArtistComponent(props: any) {
+import { artistModel } from "@/app/models/artist.mode";
+
+export function ArtistComponent(props: artistModel) {
   const inlineStyle = {
     "--cor-texto": props.color,
     "--cor-texto-opacidade": props.color + "36",

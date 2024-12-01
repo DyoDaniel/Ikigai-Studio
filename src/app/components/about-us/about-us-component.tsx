@@ -55,7 +55,7 @@ export function AboutUsComponent() {
                   Somos especialistas em tatuagens de animes, blackwork e
                   coloridas, criando designs únicos que contam histórias e
                   refletem sua personalidade. Inspirados pela estética japonesa
-                  e pelo conceito de "Ikigai" – a razão de ser – buscamos
+                  e pelo conceito de Ikigai – a razão de ser – buscamos
                   oferecer uma experiência personalizada, onde cada traço é
                   feito com dedicação e respeito à arte.
                   <br></br>

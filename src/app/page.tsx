@@ -96,7 +96,7 @@ export default function Home() {
                 logo="sofiLogo.png"
                 artistName="Sofi"
                 artistSurname="ダマセノ"
-                profileVideo="sofiProfileVideo3.mp4"
+                profileVideo="sofiProfileVideo.mp4"
                 artistFooter="BLACKWORK  -  ANIME"
                 instagramUser="@sofidamaceno"
                 instragramUrl="https://www.instagram.com/sofidamaceno?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="

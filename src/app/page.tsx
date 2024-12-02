@@ -156,7 +156,7 @@ export default function Home() {
                 artistName="Bruna"
                 artistSurname="ビオンド"
                 profileVideo="brunaProfileVideo.mp4"
-                artistFooter="BLACKWORK"
+                artistFooter="FINELINE"
                 instagramUser="@auimaue.ink"
                 instragramUrl="https://www.instagram.com/auimaue.ink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 backgroundImage="brunaBackground.png"
@@ -172,7 +172,7 @@ export default function Home() {
       <footer>
         <div>
           <div className="footer-info">
-            <h1>NOS ACOMPANHE TAMBEM NO INSTA</h1>
+            <h1>NOS ACOMPANHE TAMBÉM NO INSTA</h1>
             <a
               target="_blank"
               href="https://www.instagram.com/ikigaitt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="

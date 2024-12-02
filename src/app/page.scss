@@ -45,6 +45,10 @@
 
   .video-overlay {
     max-height: 100%;
+
+    video{
+      height: 80vh;
+    }
   }
 
   .background-video {
